@@ -1,5 +1,5 @@
 :root {
-    --sidebar-colour: rgb(85, 145, 209);
+    --sidebar-colour: rgb(70, 155, 246);
 }
 
 *,
@@ -127,8 +127,13 @@ body {
 .sidebar-container {
     /* border: 2px solid red; */
     background-color: var(--sidebar-colour);
+    color: white;
     grid-column: 1 / 2;
     grid-row: 1 / 3;
+}
+
+.nav ul li {
+    display: flex;
 }
 
 /* Main Section */
