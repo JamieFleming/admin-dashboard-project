@@ -18,8 +18,8 @@ body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: lightgray;
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 200px 2fr;
+    grid-template-rows: 200px 2fr;
 }
 
 .icon {
@@ -134,6 +134,7 @@ body {
     flex-direction: column;
     gap: 2rem;
     padding: 1rem;
+    font-size: 0.75rem;
 }
 
 #title {
@@ -154,6 +155,7 @@ body {
 
 .nav ul li {
     display: flex;
+    align-items: center;
     gap: 1rem;
 }
 
@@ -163,4 +165,117 @@ body {
     /* border: 2px solid red; */
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 2fr 250px;
+    grid-template-rows: 1fr 1fr;
+    padding: 1rem;
+    /* justify-items: center; */
+}
+
+    /* Projects Section */
+#projects {
+    /* border: 1px solid blue; */
+    grid-row: span 2;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#projects h4 {
+    margin-bottom: 1rem;
+}
+
+#article-card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    justify-items: center;
+}
+
+.article-card {
+    background-color: white;
+    font-size: 0.9rem;
+    padding: 1rem;
+    width: 300px;
+    height: 160px;
+    border-radius: 5px;
+    border-left: 10px solid lightcoral;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.article-card p {
+    font-size: 0.7rem;
+    color: gray;
+}
+
+.article-buttons {
+    /* align-self: flex-end; */
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    
+}
+
+    /* Announcement Section */
+#announcements {
+    /* border: 1px solid blue; */
+    
+}
+
+#announcements h3 {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+#announcement-articles {
+    background-color: white;
+    border-radius: 5px;
+    padding: 1rem;
+    font-size: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.announcement-article-card {
+    border-bottom: 1px solid gray;
+    padding-bottom: 1rem;
+}
+
+#announcement-articles p {
+    color: gray;
+    margin-top: 0.5rem;
+}
+
+    /* Trending Section */
+#trending {
+    /* border: 1px solid blue; */
+    margin-top: 1rem;
+}
+
+#trending h3 {
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.trending-user {
+    background-color: white;
+    border-radius: 5px;
+    padding: 1rem;
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.trending-user-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.trending-user-info p {
+    color: gray;
 }
